@@ -1,26 +1,9 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <style>
   main {
-    width: 90%;
-    min-height: 90vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .content {
-    display: flex;
-    width: 90vw;
-    max-width: 700px;
-    height: 90vh;
   }
 
   ngx-extended-pdf-viewer {
@@ -30,10 +13,16 @@
 </style>
 
 <main class="main">
-  <div class="content">
-    <ngx-extended-pdf-viewer useBrowserLocale="true" [height]="'auto'"
-      [src]="'../../public/sample.pdf'"></ngx-extended-pdf-viewer>
-  </div>
+
+  <ngx-extended-pdf-viewer useBrowserLocale="true" [showToolbar]="true" [showSidebarButton]="true"
+    [showFindButton]="true" [showPagingButtons]="true" [showDrawEditor]="true" [showStampEditor]="true"
+    [showTextEditor]="true" [showZoomButtons]="true" [showPresentationModeButton]="true" [showOpenFileButton]="true"
+    [showPrintButton]="false" [showDownloadButton]="true" [showSecondaryToolbarButton]="true" [showRotateButton]="true"
+    [showRotateCwButton]="true" [showRotateCcwButton]="false" [showHandToolButton]="false"
+    [showScrollingButtons]="false" [showSpreadButton]="true" [showPropertiesButton]="true">
+
+    ></ngx-extended-pdf-viewer>
+
 </main>
 
 

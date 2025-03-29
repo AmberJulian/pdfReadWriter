@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser", // Make sure this is 'browser'
           "options": {
-            "outputPath": "dist/pdf-reader",
+            "outputPath": "dist/cloudflare",
             "index": "src/index.html",
             "main": "src/main.ts", // Correctly set the 'main' entry point
             "polyfills": [
